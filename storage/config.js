@@ -1,7 +1,7 @@
 export default {
     dataMyHeader(){
         localStorage.setItem(`myHeader`, JSON.stringify({
-            title:{name: "Veterinaria"},
+            title:{name: "Tiendita de juguetes"},
             cont:[
                 {
                     name: "Mascotas",
