@@ -1,0 +1,44 @@
+{
+  "Mascotas": [
+    {
+      "id": 1,
+      "nombre": "Firulais",
+      "tipo": "perro",
+      "color": "purpura con verde"
+    },
+    {
+      "id": 2,
+      "nombre": "Mishi",
+      "tipo": "gato",
+      "color": "monocromatico"
+    }
+  ],
+  "Juguetes": [
+    {
+      "id": 1,
+      "nombre": "Huesito",
+      "dirigido": "canino",
+      "precio": "5"
+    },
+    {
+      "id": 2,
+      "nombre": "Bola de lana",
+      "dirigido": "gatuno",
+      "precio": "2.99"
+    },
+    {
+      "id": 3,
+      "nombre": "Cuerda de cuero (comoda para picos de aves)",
+      "dirigido": "ave",
+      "precio": "6.69"
+    },
+    {
+      "id": 4,
+      "nombre": "Pelotitas para roedores",
+      "dirigido": "roedor",
+      "precio": "1.99"
+    }
+  ],
+  "Factura": [
+  ]
+}

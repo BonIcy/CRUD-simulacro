@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" type="module" defer></script>
+    <link rel="stylesheet" href="../style.css">        
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbarResponsive">
+        <div id="title"> </div>
+          <ul class="nav-links" id="cont"></ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+    </nav>
+    <section>
+        <h1>¡Bienvenido! Aqui tenemos tu factura</h1>
+        <p>Con todas las compras realizadas en la sección de juguetes</p>
+        <div class="conta" style="display: flex; text-align: center;">
+            <table class="table" style="width: 55rem;">
+              <thead class="menu-busqueda" style="max-width: 100%;">
+                    <tr>
+                        <th scope="col">Id de compra</th>
+                        <th scope="col">Nombre del producto</th>
+                        <th scope="col">Precio unitario</th>
+                        <th scope="col">Cantidad de unidades</th>
+                        <th scope="col">Total</th>
+                    </tr>
+              </thead>
+                    <tbody class="tbody table-group-divider lista" style="justify-items:center;max-width: 100%;">
+                    </tbody> 
+                    <tfoot>
+                        <tr>
+                          <td colspan="4" style="text-align: right;">Total pagado:</td>
+                          <td class="total"></td>
+                        </tr>
+                      </tfoot>
+            </table>
+          </div>
+    </section>
+</body>
+</html>

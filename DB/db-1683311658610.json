@@ -1,0 +1,40 @@
+{
+  "Mascotas": [
+    {
+      "id": "1",
+      "nombre": "Firulais",
+      "tipo": "perro",
+      "color": "purpura con verde"
+    },
+    {
+      "id": "2",
+      "nombre": "Mishi",
+      "tipo": "gato",
+      "color": "monocromatico"
+    }
+  ],
+  "Juguetes": [
+    {
+      "nombre": "Huesito",
+      "dirigido": "Perros",
+      "precio": "5"
+    },
+    {
+      "nombre": "Bola de lana",
+      "dirigido": "Gatos",
+      "precio": "2.99"
+    }
+  ],
+  "Comida": [
+    {
+      "nombre": "Bolsa de pepas(Perro)",
+      "cantidad": "500kg",
+      "precio": "3.25"
+    },
+    {
+      "nombre": "Bolsa de pepas(Gato)",
+      "cantidad": "500kg",
+      "precio": "2.45"
+    }
+  ]
+}

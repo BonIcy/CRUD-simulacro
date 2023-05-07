@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" type="module"defer></script>
+    <script src="../js/newPet.js" type="module" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <link rel="stylesheet" href="../style.css">
+    <title>Veterinaria</title>
+</head>
+<body>
+    <nav id="navbarResponsive">
+        <div id="title"> </div>
+          <ul class="nav-links" id="cont"></ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+    </nav>
+    <section>
+        <h1>Mascotas info</h1>
+        <div id="mascotas">        
+        <div class="conta" style="display: flex; text-align: center;">
+            <table class="table" style="width: 55rem;">
+              <thead class="menu-busqueda" style="max-width: 100%;">
+                    <tr>
+                        <th scope="col">Nombre de mascota</th>
+                        <th scope="col">Tipo de mascota</th>
+                        <th scope="col">Color de mascota</th>
+                        <th scope="col">Borrar XD</th>
+                    </tr>
+              </thead>
+                    <tbody class="tbody table-group-divider lista" style="justify-items:center;max-width: 100%;">
+        
+                    </tbody>
+            </table>
+          </div>
+          </div>
+    </section>
+    <!-- Modal -->
+    <button class="open">Agregar mascota</button>
+        <div id="modal-overlay">
+        <div id="modal">
+            <form id="agregarM" method="POST">
+                <label for="pet-name">Nombre de la mascota:</label>
+                <input type="text" id="nameM" name="pet-name" required><br><br>
+              
+                <label for="pet-type">Tipo de mascota:</label>
+                <select name="tipoMascota" id="tipoM">
+                    <option value="gatuno">Gatuno</option>
+                    <option value="canino">Canino</option>
+                    <option value="ave">Ave</option>
+                    <option value="roedor">Roedor</option>
+                </select><br><br>
+                <label for="pet-color">Color de mascota:</label>
+                <input id="colorM" type="text" placeholder="Ingresa el color"><br><br>
+                <button type="submit">Agregar mascota</button>
+              </form>
+                <div style="display: flex; justify-content: flex-end;"> 
+                    <button class="close">Cancelar</button>
+                </div>
+        </div>
+        </div>
+</body>
+</html>

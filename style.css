@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    width: 60%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #333;
+    height: calc(100vh - 50px);
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li a {
+    font-size: 1.5rem;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: opacity 0.5s ease-in 0.3s;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: opacity 0.5s ease-in 0.4s;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: opacity 0.5s ease-in 0.5s;
+  }
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  #modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 0.5rem;
+  }
+  
+  th {
+    background-color: #ccc;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .compraCantidadForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cantidadInput {
+    margin-right: 0.5rem;
+  }
+  
